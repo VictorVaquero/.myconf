@@ -16,3 +16,6 @@ nmap <leader>l :set list!<CR>
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 
+if has('nvim') " Para que la .file sea general
+	tnoremap <Esc> <C-\><C-n> 
+endif
