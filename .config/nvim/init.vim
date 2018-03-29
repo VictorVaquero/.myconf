@@ -10,8 +10,8 @@ set hidden " To make it easier to work with hidden buffers
 set autowrite " Instead of leaving hidden buffers, make :w automaticly when you leave one
 set number
 set smartindent
-set tabstop 4
-set shiftwidth 4
+set tabstop=4
+set shiftwidth=4
 set expandtab
 
 " Shortcut to rapidly toggle `set list`
