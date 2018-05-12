@@ -1,3 +1,5 @@
+execute pathogen#infect()
+filetype plugin indent on
 set background=dark
 colorscheme material-monokai
 let g:materialmonokai_italic=1
