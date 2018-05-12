@@ -14,6 +14,7 @@ set tabstop=4   " Size of tabs i think
 set shiftwidth=4 " Size of something
 set expandtab " Tabs convert to spaces
 set autochdir " Automaticly set's path to current file 
+set breakindent " Smart indent wrapped lines
 
 
 " Shortcut to rapidly toggle `set list`
@@ -29,6 +30,6 @@ endif
 " For easier buffer switching NOT WORKING
 noremap <C-6> :bn<CR> 
 " Easy new line 
-noremap <CR> o<ESC> 
+noremap <CR> o<ESC>k
 
 
