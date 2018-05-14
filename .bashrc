@@ -28,11 +28,12 @@
 test -s ~/.alias && . ~/.alias || true
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME' # Git repo to keep track of my dot files
 export PS1="\\[\e[1;32m\\]\u@\h \w$\\[\e[m\\]" 
-
-
+source ~/git-completion.bash # For command line git completion
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export PATH=$PATH:/home/victor/.local/bin # Some pip package are installed here
+
+
