@@ -28,4 +28,5 @@
 test -s ~/.alias && . ~/.alias || true
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME' # Git repo to keep track of my dot files
 export PS1="\e[1;32m\u@\h \w$\e[m" 
+export PATH=$PATH:/Applications/SWI-Prolog.app/Contents/MacOS
 
