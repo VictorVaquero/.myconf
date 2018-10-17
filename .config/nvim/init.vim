@@ -1,5 +1,10 @@
-"execute pathogen#infect()
-"filetype plugin indent on
+" Vim plug
+call plug#begin('~/config/nvim/plugged')
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins'} "Autocompletado 
+Plug 'zchee/deoplete-jedi'
+let g:deoplete#enable_at_startup = 1 
+call plug#end()
+
 set background=dark
 colorscheme material-monokai
 let g:materialmonokai_italic=1
@@ -17,6 +22,7 @@ set shiftwidth=4 " Size of something
 set expandtab " Tabs convert to spaces
 set autochdir " Automaticly set's path to current file 
 set breakindent " Smart indent wrapped lines
+set encoding=utf-8
 
 
 " Shortcut to rapidly toggle `set list`
