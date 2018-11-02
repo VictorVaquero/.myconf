@@ -25,10 +25,10 @@
 #export PILOTPORT=/dev/pilot
 #export PILOTRATE=115200
 
-if [[ "$OSTYPE" == "darwin*" ]]; then
+if [[ $OSTYPE == darwin* ]]; then
     export PATH=$PATH:/Applications/SWI-Prolog.app/Contents/MacOS # Swi prolog for mac
 
-elif [[ "$OSTYPE" == "linux*" ]]; then
+elif [[ $OSTYPE == linux* ]]; then
     source /usr/src/git/alacritty/alacritty-completions.bash # Alacrity bash completion
 
 fi
