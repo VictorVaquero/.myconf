@@ -25,6 +25,14 @@
 #export PILOTPORT=/dev/pilot
 #export PILOTRATE=115200
 
+if [[ "$OSTYPE" == "darwin*" ]]; then
+    export PATH=$PATH:/Applications/SWI-Prolog.app/Contents/MacOS # Swi prolog for mac
+
+elif [[ "$OSTYPE" == "linux*" ]]; then
+    source /usr/src/git/alacritty/alacritty-completions.bash # Alacrity bash completion
+
+fi
+
 test -s ~/.alias && . ~/.alias || true
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME' # Git repo to keep track of my dot files
 export PS1="\\[\e[1;32m\\]\u@\h \w$\\[\e[m\\]" 
@@ -36,5 +44,4 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH=$PATH:/home/victor/.local/bin # Some pip package are installed here
 
-export PATH=$PATH:/Applications/SWI-Prolog.app/Contents/MacOS # Swi prolog for mac
 
