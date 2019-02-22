@@ -30,12 +30,11 @@ if [[ $OSTYPE == darwin* ]]; then
 
 elif [[ $OSTYPE == linux* ]]; then
     source /usr/src/git/alacritty/alacritty-completions.bash # Alacrity bash completion
-
+    /usr/bin/setxkbmap -option "caps:swapescape"   # Swap escape and bloq mayus
 fi
 
-test -s ~/.alias && . ~/.alias || true
-alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME' # Git repo to keep track of my dot files
-export PS1="\\[\e[1;32m\\]\u@\h \w$\\[\e[m\\]" 
+
+export PS1="\\[\e[1;32m\\]\u@\h \w$\\[\e[m\\]"  # Changes to the way the prompt looks 
 source ~/git-completion.bash # For command line git completion
 
 export NVM_DIR="$HOME/.nvm"
@@ -45,3 +44,7 @@ export NVM_DIR="$HOME/.nvm"
 export PATH=$PATH:/home/victor/.local/bin # Some pip package are installed here
 
 
+test -s ~/.alias && . ~/.alias || true # You can put alias in that file
+alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME' # Git repo to keep track of my dot files
+alias vi='/usr/bin/nvim' # Easy nvim
+alias vim='/usr/bin/nvim' # Easy nvim
