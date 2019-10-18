@@ -39,19 +39,25 @@ set tabstop=4   " Size of tabs i think
 set shiftwidth=4 " Size of something
 set expandtab " Tabs convert to spaces
 set autochdir " Automaticly set's path to current file 
-set breakindent " Smart indent wrapped lines
+set breakindent " Smart indent wrapped lines, same imaginary indent
 set encoding=utf-8 " Always use utf8
 set nohlsearch " Don't highlight search like ever
+set spelllang=es " Stablish main language
+set spell   " Set spell correction
 
 
 " Shortcut to rapidly toggle `set list`
-nmap <leader>l :set list!<CR>
+nnoremap <leader>l :set list!<CR>
+" Shortcut to ctags, tag file in actual directory
+nnoremap <leader>t :!ctags -R<CR><CR>
+
 
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 
 if has('nvim') " Para que la .file sea general
 	tnoremap <Esc> <C-\><C-n> 
+    " No idea of what it does
 endif
 
 " For easier buffer switching NOT WORKING IN MAC
@@ -60,6 +66,7 @@ noremap <C-6> :bn<CR>
 noremap <CR> o<ESC>k
 " noremap <S-CR> O<ESC>j NOT WORKING
 
-
+" Sudo save with :W
+command W w !sudo tee % > /dev/null
 
 

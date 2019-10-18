@@ -25,6 +25,7 @@
 #export PILOTPORT=/dev/pilot
 #export PILOTRATE=115200
 
+#echo "Sistema: $OSTYPE"
 if [[ $OSTYPE == darwin* ]]; then
     export PATH=$PATH:/Applications/SWI-Prolog.app/Contents/MacOS # Swi prolog for mac
 
@@ -48,3 +49,5 @@ test -s ~/.alias && . ~/.alias || true # You can put alias in that file
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME' # Git repo to keep track of my dot files
 alias vi='/usr/bin/nvim' # Easy nvim
 alias vim='/usr/bin/nvim' # Easy nvim
+alias py='/usr/bin/python3' # Easy python
+# alias python='/usr/bin/python3' # Fuck normal python
