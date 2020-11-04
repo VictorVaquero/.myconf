@@ -36,4 +36,4 @@ fi
 ~/.fehbg &
 
 # Start window manager
-exec i3 
+exec i3
