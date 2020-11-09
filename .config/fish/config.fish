@@ -1,6 +1,11 @@
 # My fish main dot file
 #
 
+# Stop reading if non-interactive
+if not status --is-interactive
+    exit 0
+end
+
 # ---------- System Variables -----
 #
 
@@ -24,14 +29,14 @@ alias config="git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 # ----- Start X at login
 
 if status --is-login
-    if test -z "$DISPLAY" -a $XDG_VTNR = 1
+    if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
         exec startx
     end
 end
 
 
 # ----- Output neofetch when not in login
-if not status --is-login
+if not status --is-login 
     echo \n
     neofetch
 end
