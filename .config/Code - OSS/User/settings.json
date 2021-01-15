@@ -1,0 +1,5 @@
+{
+    "keyboard.dispatch": "keyCode",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.fontLigatures": true
+}
