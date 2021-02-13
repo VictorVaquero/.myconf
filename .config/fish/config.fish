@@ -23,6 +23,7 @@ bind ! __history_previous_command
 #
 alias su="su -l" # Always clear everything before changing users
 alias vi="nvim" # Neovim as deafult
+alias vim="nvim" # same
 alias config="git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 
 
