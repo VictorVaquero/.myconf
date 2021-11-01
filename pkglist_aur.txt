@@ -1,0 +1,7 @@
+autofirma
+google-chrome
+ncurses5-compat-libs
+osync
+polybar
+scilab-bin
+simplenote-electron-bin

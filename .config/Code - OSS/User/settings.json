@@ -1,5 +1,6 @@
 {
     "keyboard.dispatch": "keyCode",
     "liveServer.settings.donotShowInfoMsg": true,
-    "editor.fontLigatures": true
+    "editor.fontLigatures": true,
+    "explorer.confirmDelete": false
 }
